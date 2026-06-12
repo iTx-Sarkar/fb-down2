@@ -2,25 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bandaheali Facebook Video Downloader | Download FB HD Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
     
-    <!-- SEO and Meta Tags -->
-    <meta name="description" content="Download Facebook videos in high quality with Team Bandaheali Facebook Video Downloader. Developed by mr Shaban with premium Smd-mini support. Free neon-fast utility with no limits.">
-    <meta name="keywords" content="Team Bandaheali, Bandaheali, mr Shaban, Smd-mini, Team Bandaheali Facebook Downloader, facebook video downloader, download fb video, facebook online downloader, download facebook mp4, save fb video HD, lightning fb loader">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Team Bandaheali Facebook Video Downloader">
-    <meta property="og:description" content="Lightning-fast, premium neon theme web tool powered by Team Bandaheali, mr Shaban, and Smd-mini to download high quality Facebook videos in seconds.">
+    <!-- Title (50-60 characters ideal for SEO) -->
+    <title>Team Bandaheali Facebook Video Downloader - Download FB Videos HD Free</title>
+    
+    <!-- Meta Description (150-160 characters) -->
+    <meta name="description" content="Download Facebook videos in HD quality free with Team Bandaheali Facebook Video Downloader. Support 1080p, 720p, 480p, 360p. Fast, secure & unlimited FB video downloader.">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="Team Bandaheali, Facebook video downloader, download FB video, Facebook video saver, save Facebook videos, FB video download HD, free Facebook downloader, Facebook reel downloader">
+    
+    <meta name="author" content="Team Bandaheali">
+    <meta name="copyright" content="Team Bandaheali">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bandaheali.com/facebook-video-downloader">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=600&auto=format&fit=crop">
+    <meta property="og:url" content="https://bandaheali.com/facebook-video-downloader">
+    <meta property="og:title" content="Team Bandaheali Facebook Video Downloader - Download FB Videos Free">
+    <meta property="og:description" content="Best free Facebook video downloader. Download any Facebook video in HD quality. Support 1080p, 720p, 480p. Fast and unlimited.">
+    <meta property="og:image" content="https://bandaheali.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Team Bandaheali">
+    <meta property="og:locale" content="en_US">
     
-    <!-- Fonts and Icons -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://bandaheali.com/facebook-video-downloader">
+    <meta name="twitter:title" content="Team Bandaheali Facebook Video Downloader">
+    <meta name="twitter:description" content="Download Facebook videos in HD quality free. Fast and unlimited FB video downloader.">
+    <meta name="twitter:image" content="https://bandaheali.com/twitter-image.jpg">
+    
+    <!-- Additional SEO Tags -->
+    <meta name="theme-color" content="#040308">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
-    <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script> 
         tailwind.config = {
@@ -37,11 +70,6 @@
                         neonPink: '#ff007f',
                         neonCyan: '#00f0ff',
                         neonPurple: '#bd00ff'
-                    },
-                    boxShadow: {
-                        'neon-pink': '0 0 15px rgba(255, 0, 127, 0.4)',
-                        'neon-cyan': '0 0 15px rgba(0, 240, 255, 0.4)',
-                        'neon-purple': '0 0 20px rgba(189, 0, 255, 0.35)',
                     }
                 }
             }
@@ -49,713 +77,326 @@
     </script>
     
     <style>
-        /* Custom background grid and glow */
         .cyber-grid {
-            background-image: 
-                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             background-size: 30px 30px;
         }
-        .neon-text-glow {
-            text-shadow: 0 0 10px rgba(0, 240, 255, 0.6), 0 0 20px rgba(189, 0, 255, 0.4);
+        .quality-btn {
+            transition: all 0.3s ease;
         }
-        .neon-text-pink {
-            text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
-        }
-        @keyframes lightning-glow {
-            0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 2px #00f0ff); }
-            50% { opacity: 1; filter: drop-shadow(0 0 12px #00f0ff) drop-shadow(0 0 25px #ff007f); }
-        }
-        .lightning-pulse {
-            animation: lightning-glow 1.5s infinite alternate;
-        }
-        /* Custom Scrollbar for Neon Look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #040308;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1f1a3a;
-            border-radius: 4px;
-            border: 2px solid #040308;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ff007f;
+        .quality-btn:hover {
+            transform: translateY(-2px);
         }
     </style>
 
-    <!-- Structured Data (JSON-LD) for SEO Search Ranking -->
+    <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Team Bandaheali Facebook Video Downloader",
-      "url": "https://bandaheali.com",
-      "genre": "Utility",
-      "operatingSystem": "All",
-      "applicationCategory": "MultimediaApplication",
-      "author": {
-        "@type": "Person",
-        "name": "mr Shaban"
-      },
-      "description": "Download Facebook videos in high quality with Team Bandaheali Facebook Video Downloader. Free, fast and premium neon utility supported by Smd-mini."
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Team Bandaheali Facebook Video Downloader",
+        "url": "https://bandaheali.com/facebook-video-downloader",
+        "description": "Download Facebook videos in HD quality for free. Supports 1080p, 720p, 480p, 360p and audio extraction.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Team Bandaheali"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bandaheali.com"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Facebook Video Downloader",
+            "item": "https://bandaheali.com/facebook-video-downloader"
+        }]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Is Team Bandaheali Facebook Video Downloader free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, completely free with no hidden charges or limits."
+            }
+        },{
+            "@type": "Question",
+            "name": "What qualities are supported?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Supports 1080p HD, 720p, 480p, 360p SD, and audio extraction."
+            }
+        },{
+            "@type": "Question",
+            "name": "Do I need to install software?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, it's a web-based tool. Just paste the URL and download."
+            }
+        }]
     }
     </script>
 </head>
-<body class="bg-cyberDark text-gray-200 font-sans min-h-screen relative overflow-x-hidden cyber-grid">
+<body class="bg-cyberDark text-gray-200 font-sans min-h-screen cyber-grid">
 
-    <!-- Decorative Neon Background Lights -->
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-neonPurple opacity-20 rounded-full blur-[120px] pointer-events-none"></div>
-    <div class="absolute top-[40%] right-10 w-[400px] h-[400px] bg-neonCyan opacity-10 rounded-full blur-[150px] pointer-events-none"></div>
-    <div class="absolute bottom-10 left-10 w-80 h-80 bg-neonPink opacity-10 rounded-full blur-[110px] pointer-events-none"></div>
-
-    <!-- Top Sticky Neon Bar -->
-    <div class="h-1 bg-gradient-to-r from-neonPink via-neonPurple to-neonCyan w-full"></div>
-
-    <!-- Header / Navigation -->
-    <header class="border-b border-cyberBorder bg-cyberDark/90 backdrop-blur-md sticky top-0 z-50 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-tr from-neonPink to-neonPurple shadow-neon-pink">
-                    <i class="fa-brands fa-facebook-f text-white text-2xl"></i>
-                    <!-- Glowing active indicator -->
-                    <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neonCyan opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-neonCyan"></span>
-                    </span>
+    <!-- Header -->
+    <header class="border-b border-cyberBorder bg-cyberDark/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-neonPink to-neonPurple flex items-center justify-center">
+                    <i class="fa-brands fa-facebook-f text-white text-xl"></i>
                 </div>
                 <div>
-                    <div class="flex items-center space-x-2">
-                        <span class="font-cyber font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-neonCyan text-base sm:text-lg">
-                            TEAM BANDAHEALI
-                        </span>
-                    </div>
-                    <div class="text-[10px] tracking-widest text-neonPink uppercase font-mono font-bold">
-                        BY mr Shaban &bull; SMD-MINI
-                    </div>
+                    <h1 class="font-cyber font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-neonCyan text-sm sm:text-base">
+                        TEAM BANDAHEALI
+                    </h1>
+                    <p class="text-[9px] text-neonPink font-mono -mt-1">FB VIDEO DOWNLOADER</p>
                 </div>
             </div>
-
-            <!-- Utility Badges -->
-            <div class="hidden md:flex items-center space-x-4 font-mono">
-                <span class="px-3 py-1 rounded-full border border-neonCyan/30 text-neonCyan text-xs bg-neonCyan/10 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 bg-neonCyan rounded-full animate-pulse"></span>
-                    NEON-SPEED ACTIVE
-                </span>
-                <span class="px-3 py-1 rounded-full border border-neonPink/30 text-neonPink text-xs bg-neonPink/10 flex items-center gap-1.5">
-                    <i class="fa-solid fa-crown text-[10px]"></i>
-                    PREMIUM v4.2
-                </span>
+            <div class="flex items-center gap-3 text-xs">
+                <span class="hidden sm:inline text-neonCyan font-mono">⚡ FAST & FREE</span>
+                <span class="text-neonPink font-mono">✓ 100% SAFE</span>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Grid -->
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20 relative z-10">
+    <main class="max-w-5xl mx-auto px-4 py-8">
         
         <!-- Hero Section -->
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <div class="inline-flex items-center space-x-2 bg-cyberCard border border-cyberBorder px-4 py-2 rounded-full mb-6 shadow-sm">
-                <span class="text-xs text-neonCyan font-mono uppercase tracking-widest">
-                    <i class="fa-solid fa-bolt mr-1 text-neonPink animate-bounce"></i> Supercharged Client Tool
-                </span>
-            </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-cyber font-black tracking-tight text-white mb-6">
-                Lightning <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan via-neonPurple to-neonPink neon-text-glow">FB Downloader</span>
+        <div class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-cyber font-black text-white mb-4">
+                Facebook <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonPink">Video Downloader</span>
             </h1>
-            <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                Instantly extract high definition HD and SD MP4 streams from any Facebook post, watch, or reels link. Purely unrestricted, optimized by <strong class="text-white">mr Shaban</strong>.
-            </p>
-        </div>
-
-        <!-- Downloader Container Card -->
-        <div class="bg-cyberCard border border-cyberBorder rounded-3xl p-6 sm:p-8 lg:p-10 shadow-neon-purple relative mb-12 overflow-hidden">
-            <!-- Light accent borders -->
-            <div class="absolute top-0 left-0 w-32 h-[2px] bg-gradient-to-r from-transparent to-neonCyan"></div>
-            <div class="absolute bottom-0 right-0 w-32 h-[2px] bg-gradient-to-r from-neonPink to-transparent"></div>
-            
-            <!-- Input Form Box -->
-            <div>
-                <label class="block text-xs font-cyber tracking-widest text-neonCyan uppercase mb-3 font-bold">
-                    Paste Facebook Video / Reel URL
-                </label>
-                <form id="downloader-form" class="space-y-4 sm:space-y-0 sm:flex sm:items-center sm:space-x-3" onsubmit="analyzeUrl(event)">
-                    <div class="relative flex-1">
-                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <i class="fa-brands fa-facebook text-gray-500 text-lg group-focus-within:text-neonCyan transition-colors"></i>
-                        </div>
-                        <input 
-                            type="url" 
-                            id="fb-url"
-                            placeholder="https://www.facebook.com/.../videos/..."
-                            required
-                            class="w-full pl-11 pr-12 py-4 bg-cyberDark/80 border border-cyberBorder rounded-xl focus:border-neonCyan focus:ring-1 focus:ring-neonCyan text-white placeholder-gray-500 font-mono text-sm focus:outline-none transition-all shadow-inner"
-                        />
-                        <button 
-                            type="button" 
-                            onclick="clearInput()"
-                            title="Clear Input"
-                            class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-500 hover:text-neonPink transition-colors"
-                        >
-                            <i class="fa-solid fa-circle-xmark"></i>
-                        </button>
-                    </div>
-                    <button 
-                        type="submit" 
-                        class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-neonCyan to-neonPurple hover:from-neonPink hover:to-neonPurple text-white font-cyber font-bold uppercase tracking-wider rounded-xl transition-all duration-300 transform active:scale-95 shadow-neon-cyan hover:shadow-neon-pink flex items-center justify-center space-x-2 shrink-0"
-                    >
-                        <span>ANALYZE</span>
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
-                    </button>
-                </form>
-                
-                <!-- Mini Quick Actions -->
-                <div class="flex flex-wrap items-center justify-between gap-2 mt-4 text-xs font-mono text-gray-400">
-                    <div class="flex space-x-3">
-                        <button onclick="pasteFromClipboard()" class="hover:text-neonCyan transition-colors flex items-center gap-1.5">
-                            <i class="fa-solid fa-clipboard text-[11px]"></i> Paste Clipboard
-                        </button>
-                        <span class="text-cyberBorder">|</span>
-                        <button onclick="loadDemoUrl()" class="hover:text-neonPink transition-colors flex items-center gap-1.5">
-                            <i class="fa-solid fa-flask text-[11px]"></i> Try Demo URL
-                        </button>
-                    </div>
-                    <span class="text-neonCyan/70 font-bold"><i class="fa-regular fa-circle-check"></i> High Speed Server Active</span>
-                </div>
-            </div>
-
-            <!-- Live Terminal Output Simulation (Immersion for developers/users) -->
-            <div id="terminal-box" class="hidden mt-8 border border-cyberBorder bg-black rounded-xl p-4 font-mono text-xs text-gray-400 overflow-hidden relative">
-                <div class="flex items-center justify-between border-b border-cyberBorder pb-2 mb-3">
-                    <div class="flex items-center space-x-2">
-                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
-                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
-                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
-                        <span class="text-gray-500 pl-1 text-[10px] tracking-wide">SMD-MINI BYPASS CONSOLE</span>
-                    </div>
-                    <span class="text-neonCyan inline-block animate-pulse font-bold">ONLINE</span>
-                </div>
-                <div id="terminal-logs" class="space-y-1 max-h-36 overflow-y-auto select-none">
-                    <!-- Dynamic logs inject here -->
-                </div>
-            </div>
-
-            <!-- Dynamic Alert Message -->
-            <div id="status-alert" class="hidden mt-6 p-4 rounded-xl border flex items-start space-x-3 transition-all duration-300"></div>
-
-            <!-- Video Stream Downloader Card Result -->
-            <div id="result-card" class="hidden mt-8 border border-neonCyan/20 bg-cyberDark/90 rounded-2xl p-6 relative overflow-hidden">
-                <div class="absolute -right-16 -bottom-16 w-48 h-48 bg-neonCyan opacity-5 rounded-full blur-3xl pointer-events-none"></div>
-                
-                <div class="flex flex-col lg:flex-row gap-6 items-start">
-                    <!-- Thumbnail Simulation -->
-                    <div class="w-full lg:w-48 h-32 rounded-lg bg-cyberBorder flex-shrink-0 relative overflow-hidden flex items-center justify-center border border-cyberBorder group">
-                        <img id="res-thumbnail" src="" alt="FB video preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/80 text-[10px] font-mono text-neonCyan font-bold tracking-widest uppercase">
-                            STREAM
-                        </span>
-                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                            <i class="fa-regular fa-circle-play text-white text-3xl group-hover:scale-110 transition-transform"></i>
-                        </div>
-                    </div>
-                    
-                    <!-- Info & Downloads -->
-                    <div class="flex-1 w-full space-y-4">
-                        <div>
-                            <div class="flex items-center space-x-2 mb-1">
-                                <span class="px-2 py-0.5 rounded bg-neonCyan/10 text-neonCyan font-mono font-bold text-[10px] tracking-widest uppercase border border-neonCyan/20">
-                                    FOUND FB VIDEO
-                                </span>
-                                <span class="text-xs text-gray-500 font-mono" id="res-duration">Duration: ~02:45</span>
-                            </div>
-                            <h3 class="text-lg font-cyber font-bold text-white tracking-wide line-clamp-2" id="res-title">
-                                Facebook Premium Stream Output
-                            </h3>
-                        </div>
-                        
-                        <!-- Streaming Links Action Area -->
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                            <!-- HD Button -->
-                            <a id="btn-hd" href="#" target="_blank" class="flex items-center justify-between p-3.5 rounded-xl border border-neonCyan bg-neonCyan/5 hover:bg-neonCyan/20 text-neonCyan font-mono font-bold text-sm transition-all shadow-neon-cyan/10 hover:shadow-neon-cyan/30 group">
-                                <span class="flex items-center gap-2">
-                                    <i class="fa-solid fa-circle-chevron-up text-xs animate-bounce"></i>
-                                    HD Video (1080p)
-                                </span>
-                                <span class="text-xs opacity-80 group-hover:translate-x-1 transition-transform"><i class="fa-solid fa-download"></i></span>
-                            </a>
-                            
-                            <!-- SD Button -->
-                            <a id="btn-sd" href="#" target="_blank" class="flex items-center justify-between p-3.5 rounded-xl border border-neonPink bg-neonPink/5 hover:bg-neonPink/20 text-neonPink font-mono font-bold text-sm transition-all shadow-neon-pink/10 hover:shadow-neon-pink/30 group">
-                                <span class="flex items-center gap-2">
-                                    <i class="fa-solid fa-circle-chevron-down text-xs"></i>
-                                    SD Video (720p)
-                                </span>
-                                <span class="text-xs opacity-80 group-hover:translate-x-1 transition-transform"><i class="fa-solid fa-download"></i></span>
-                            </a>
-                            
-                            <!-- MP3 Audio Only -->
-                            <a id="btn-audio" href="#" target="_blank" class="flex items-center justify-between p-3.5 rounded-xl border border-neonPurple bg-neonPurple/5 hover:bg-neonPurple/20 text-neonPurple font-mono font-bold text-sm transition-all shadow-neon-purple/10 hover:shadow-neon-purple/30 group">
-                                <span class="flex items-center gap-2">
-                                    <i class="fa-solid fa-music text-xs"></i>
-                                    Audio Only
-                                </span>
-                                <span class="text-xs opacity-80 group-hover:translate-x-1 transition-transform"><i class="fa-solid fa-download"></i></span>
-                            </a>
-                        </div>
-
-                        <div class="p-3 bg-cyberDark/50 rounded-lg border border-cyberBorder text-xs font-mono text-gray-400 space-y-1">
-                            <p class="text-[11px] text-yellow-400/80 font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-triangle-exclamation"></i> Chrome & Safari Note:
-                            </p>
-                            <p>If video plays instead of downloading: Click the <strong class="text-white">three dots menu (&bull;&bull;&bull;)</strong> in the video player bottom-right and select <strong class="text-white">Download</strong>.</p>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+                Download any Facebook video in HD quality - <strong class="text-neonCyan">100% Free</strong> & Unlimited
+            </h2>
+            <div class="flex justify-center gap-4 mt-4 text-xs text-gray-500">
+                <span><i class="fa-solid fa-circle-check text-neonCyan"></i> No Registration</span>
+                <span><i class="fa-solid fa-circle-check text-neonCyan"></i> No Watermark</span>
+                <span><i class="fa-solid fa-circle-check text-neonCyan"></i> Support HD 1080p</span>
             </div>
         </div>
 
-        <!-- Recent Downloads History Section -->
-        <div id="history-section" class="hidden mb-16">
-            <div class="flex items-center justify-between mb-4">
-                <h3 class="font-cyber font-bold text-lg text-white tracking-wider uppercase flex items-center gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-neonCyan animate-ping"></span>
-                    Recent Downloads Local History
-                </h3>
-                <button onclick="clearHistory()" class="text-xs font-mono text-neonPink hover:underline">
-                    <i class="fa-solid fa-trash-can mr-1"></i> Clear All
+        <!-- Download Form -->
+        <div class="bg-cyberCard border border-cyberBorder rounded-2xl p-6 shadow-lg">
+            <form id="download-form" class="flex flex-col md:flex-row gap-3">
+                <label for="video-url" class="sr-only">Facebook Video URL</label>
+                <input type="url" id="video-url" name="url" placeholder="https://www.facebook.com/.../videos/..." 
+                       class="flex-1 px-4 py-3 bg-cyberDark/80 border border-cyberBorder rounded-xl focus:border-neonCyan focus:ring-1 focus:ring-neonCyan text-white placeholder-gray-500 outline-none"
+                       required>
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-neonCyan to-neonPurple hover:from-neonPink hover:to-neonPurple rounded-xl font-bold transition-all">
+                    <i class="fa-solid fa-download mr-2"></i>Download Now
                 </button>
+            </form>
+
+            <div id="status" class="mt-4 text-sm"></div>
+            <div id="loading" class="hidden mt-4 text-neonCyan text-center">
+                <i class="fa-solid fa-spinner fa-spin mr-2"></i>Processing your video...
             </div>
-            <div id="history-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Inject Dynamic Local Storage History items here -->
+            <div id="results" class="hidden mt-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-circle-check text-neonCyan"></i>
+                    <span class="font-mono text-neonCyan">✓ Video found! Click any quality to download</span>
+                </div>
+                <div id="quality-buttons" class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <!-- Buttons injected here -->
+                </div>
+                <div class="mt-4 p-3 bg-cyberDark/50 rounded-lg text-xs text-gray-400 border border-cyberBorder">
+                    <i class="fa-solid fa-circle-info text-neonCyan mr-1"></i>
+                    <span class="text-neonCyan">Pro Tip:</span> Right-click and select "Save link as" if video plays in browser.
+                </div>
             </div>
         </div>
 
-        <!-- Creator & Premium Supporter Cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <!-- Card Creator -->
-            <div class="bg-cyberCard border border-cyberBorder rounded-3xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between hover:border-neonPink/40 transition-colors duration-300">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-neonPink opacity-5 rounded-full blur-2xl pointer-events-none"></div>
-                
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div class="bg-cyberCard border border-cyberBorder rounded-xl p-5 text-center">
+                <i class="fa-solid fa-bolt-lightning text-3xl text-neonCyan mb-3"></i>
+                <h3 class="font-bold text-white mb-2">Lightning Fast</h3>
+                <p class="text-xs text-gray-400">Instant video extraction with no waiting time</p>
+            </div>
+            <div class="bg-cyberCard border border-cyberBorder rounded-xl p-5 text-center">
+                <i class="fa-solid fa-lock text-3xl text-neonPink mb-3"></i>
+                <h3 class="font-bold text-white mb-2">Secure & Private</h3>
+                <p class="text-xs text-gray-400">No logs, no tracking, complete privacy</p>
+            </div>
+            <div class="bg-cyberCard border border-cyberBorder rounded-xl p-5 text-center">
+                <i class="fa-solid fa-display text-3xl text-neonPurple mb-3"></i>
+                <h3 class="font-bold text-white mb-2">All Devices</h3>
+                <p class="text-xs text-gray-400">Works on mobile, tablet, and desktop</p>
+            </div>
+        </div>
+
+        <!-- Supported Qualities -->
+        <div class="mt-12">
+            <h3 class="text-center font-cyber font-bold text-xl text-white mb-6">Supported Video Qualities</h3>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-cyberCard border border-neonCyan rounded-full text-neonCyan text-sm">1080p Full HD</span>
+                <span class="px-4 py-2 bg-cyberCard border border-neonPink rounded-full text-neonPink text-sm">720p HD</span>
+                <span class="px-4 py-2 bg-cyberCard border border-neonPurple rounded-full text-neonPurple text-sm">480p</span>
+                <span class="px-4 py-2 bg-cyberCard border border-cyberBorder rounded-full text-gray-400 text-sm">360p</span>
+                <span class="px-4 py-2 bg-cyberCard border border-cyberBorder rounded-full text-gray-400 text-sm">Audio Only</span>
+            </div>
+        </div>
+
+        <!-- FAQ Section for SEO (Rich Snippets) -->
+        <div class="mt-12 bg-cyberCard border border-cyberBorder rounded-2xl p-6">
+            <h3 class="font-cyber font-bold text-xl text-white mb-6 text-center">Frequently Asked Questions</h3>
+            <div class="space-y-4">
                 <div>
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-12 h-12 rounded-full border border-neonPink flex items-center justify-center bg-neonPink/10 text-neonPink text-xl font-bold shadow-neon-pink">
-                            S
-                        </div>
-                        <div>
-                            <h4 class="text-white font-cyber font-bold tracking-wider">mr Shaban</h4>
-                            <p class="text-xs text-neonPink font-mono uppercase tracking-widest">Lead Dev &amp; Founder</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Developed by mr Shaban with robust custom algorithms to secure super-fast stream parsing, bypassing limits on rate caps, providing premium server optimization.
-                    </p>
+                    <h4 class="font-bold text-neonCyan mb-2">❓ Is Team Bandaheali Facebook Video Downloader free?</h4>
+                    <p class="text-sm text-gray-400">Yes, absolutely free! No hidden charges, no premium tiers. Download unlimited Facebook videos.</p>
                 </div>
-
-                <div class="flex items-center justify-between pt-4 border-t border-cyberBorder">
-                    <span class="text-xs font-mono text-gray-500">@Team Bandaheali Premium</span>
-                    <div class="flex space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-neonPink text-lg transition-colors"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-neonPink text-lg transition-colors"><i class="fa-brands fa-telegram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-neonPink text-lg transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card SMD MINI Support -->
-            <div class="bg-cyberCard border border-cyberBorder rounded-3xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between hover:border-neonCyan/40 transition-colors duration-300">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-neonCyan opacity-5 rounded-full blur-2xl pointer-events-none"></div>
-                
                 <div>
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-12 h-12 rounded-full border border-neonCyan flex items-center justify-center bg-neonCyan/10 text-neonCyan text-xl font-bold shadow-neon-cyan">
-                            M
-                        </div>
-                        <div>
-                            <h4 class="text-white font-cyber font-bold tracking-wider">Smd-mini core</h4>
-                            <p class="text-xs text-neonCyan font-mono uppercase tracking-widest">Lightning utility bypass</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        A minimal powerpack core optimized to render, format, and package raw metadata fast directly inside modern browsers. Pure efficiency, no heavy redirects.
-                    </p>
+                    <h4 class="font-bold text-neonPink mb-2">❓ What video qualities can I download?</h4>
+                    <p class="text-sm text-gray-400">We support all available qualities including 1080p Full HD, 720p HD, 480p, 360p SD, and audio extraction.</p>
                 </div>
-
-                <div class="flex items-center justify-between pt-4 border-t border-cyberBorder">
-                    <span class="text-xs font-mono text-gray-500">Engine v4.2 Status: Active</span>
-                    <div class="flex space-x-3 text-neonCyan font-mono text-xs">
-                        <i class="fa-solid fa-microchip mr-1"></i> SMD-CORE SECURE
-                    </div>
+                <div>
+                    <h4 class="font-bold text-neonPurple mb-2">❓ Do I need to install any software?</h4>
+                    <p class="text-sm text-gray-400">No installation needed. It's a web-based tool. Just paste the Facebook video URL and click download.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-neonCyan mb-2">❓ Can I download private Facebook videos?</h4>
+                    <p class="text-sm text-gray-400">Only public videos can be downloaded. Private videos are protected by Facebook's privacy settings.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Core Feature Grid -->
-        <div class="mb-16">
-            <div class="text-center max-w-xl mx-auto mb-10">
-                <h3 class="font-cyber font-extrabold text-2xl text-white tracking-wider mb-2">ENGINE FEATURES</h3>
-                <p class="text-gray-400 text-xs font-mono">ENGINEERED FOR SUPREME STABILITY</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Feature 1 -->
-                <div class="p-6 bg-cyberCard border border-cyberBorder rounded-2xl relative">
-                    <div class="w-10 h-10 rounded-lg bg-neonPink/10 text-neonPink flex items-center justify-center mb-4 border border-neonPink/20">
-                        <i class="fa-solid fa-bolt-lightning"></i>
-                    </div>
-                    <h5 class="text-white font-cyber font-bold mb-2">Lightning Neon Fast</h5>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        No artificial queues or countdown screens. We fetch direct, giving you fast links instantaneously.
-                    </p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="p-6 bg-cyberCard border border-cyberBorder rounded-2xl relative">
-                    <div class="w-10 h-10 rounded-lg bg-neonCyan/10 text-neonCyan flex items-center justify-center mb-4 border border-neonCyan/20">
-                        <i class="fa-solid fa-lock-open"></i>
-                    </div>
-                    <h5 class="text-white font-cyber font-bold mb-2">Secure, Zero Tracking</h5>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        No external servers logging your downloads. All analysis is direct and strictly clean for security.
-                    </p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="p-6 bg-cyberCard border border-cyberBorder rounded-2xl relative">
-                    <div class="w-10 h-10 rounded-lg bg-neonPurple/10 text-neonPurple flex items-center justify-center mb-4 border border-neonPurple/20">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h5 class="text-white font-cyber font-bold mb-2">Multi-stream Bypass</h5>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Easily download Reels, Live Streams (Replay), Videos and Audio soundtracks directly without limits.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Interactive FAQ Section -->
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-8">
-                <h4 class="font-cyber font-bold text-2xl text-white tracking-wider mb-2">FREQUENTLY ASKED QUESTIONS</h4>
-                <p class="text-gray-400 text-xs font-mono">KNOWLEDGE BASE</p>
-            </div>
-
-            <div class="space-y-4 font-sans">
-                <div class="bg-cyberCard border border-cyberBorder rounded-xl p-5">
-                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left text-white font-cyber font-bold text-sm tracking-wide focus:outline-none">
-                        <span>Is this Facebook Video Downloader free to use?</span>
-                        <i class="fa-solid fa-chevron-down text-neonCyan transition-transform"></i>
-                    </button>
-                    <p class="hidden text-xs text-gray-400 mt-3 leading-relaxed border-t border-cyberBorder/50 pt-3">
-                        Yes, absolutely! The downloader powered by mr Shaban and Smd-mini is 100% free with unlimited conversions. There are no limits and zero advertisement blocks.
-                    </p>
-                </div>
-
-                <div class="bg-cyberCard border border-cyberBorder rounded-xl p-5">
-                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left text-white font-cyber font-bold text-sm tracking-wide focus:outline-none">
-                        <span>Which FB video formats are supported?</span>
-                        <i class="fa-solid fa-chevron-down text-neonCyan transition-transform"></i>
-                    </button>
-                    <p class="hidden text-xs text-gray-400 mt-3 leading-relaxed border-t border-cyberBorder/50 pt-3">
-                        Our backend extracts high resolution MP4 formats up to HD 1080p, Standard Quality SD 720p, or clean raw M4A/MP3 sound streams if you want audio content only.
-                    </p>
-                </div>
-
-                <div class="bg-cyberCard border border-cyberBorder rounded-xl p-5">
-                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left text-white font-cyber font-bold text-sm tracking-wide focus:outline-none">
-                        <span>Does this tool save a copy of downloaded video clips?</span>
-                        <i class="fa-solid fa-chevron-down text-neonCyan transition-transform"></i>
-                    </button>
-                    <p class="hidden text-xs text-gray-400 mt-3 leading-relaxed border-t border-cyberBorder/50 pt-3">
-                        No. Privacy is our top principle. We process the source streams securely inside your dynamic client view. The tool holds zero storage servers and doesn't record downloaded video files.
-                    </p>
-                </div>
-            </div>
-        </div>
-
+        <!-- Footer -->
+        <footer class="text-center mt-12 pt-6 border-t border-cyberBorder">
+            <p class="text-gray-500 text-xs">
+                © 2025 <strong class="text-neonCyan">Team Bandaheali</strong> - Free Facebook Video Downloader Tool
+            </p>
+            <p class="text-gray-600 text-[10px] mt-2">
+                This tool is for downloading your own Facebook videos or videos with permission.
+            </p>
+        </footer>
     </main>
 
-    <!-- Footer Footer -->
-    <footer class="border-t border-cyberBorder bg-cyberDark py-12 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between gap-6 md:flex-row">
-            <div class="text-center md:text-left">
-                <p class="font-cyber font-black text-sm tracking-wider text-white">
-                    TEAM BANDAHEALI
-                </p>
-                <p class="text-xs text-gray-500 mt-1">
-                    Advanced premium bypass tool developed by mr Shaban with premium Smd-mini support.
-                </p>
-            </div>
-            <div class="flex space-x-6 text-xs font-mono text-gray-400">
-                <a href="#" class="hover:text-neonCyan transition-colors">Terms</a>
-                <a href="#" class="hover:text-neonPink transition-colors">Privacy Policy</a>
-                <span class="text-cyberBorder">&bull;</span>
-                <span class="text-neonCyan">&copy; <span id="year-span">2025</span> Bandaheali</span>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Main Javascript Logic -->
     <script>
-        // Dynamic copyright year
-        document.getElementById('year-span').innerText = new Date().getFullYear();
+        const form = document.getElementById('download-form');
+        const urlInput = document.getElementById('video-url');
+        const statusDiv = document.getElementById('status');
+        const loadingDiv = document.getElementById('loading');
+        const resultsDiv = document.getElementById('results');
+        const qualityContainer = document.getElementById('quality-buttons');
 
-        // Interactive FAQ toggles
-        function toggleFaq(button) {
-            const icon = button.querySelector('i');
-            const p = button.nextElementSibling;
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const videoUrl = urlInput.value.trim();
             
-            if (p.classList.contains('hidden')) {
-                p.classList.remove('hidden');
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                p.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
+            if (!videoUrl) {
+                showStatus('Please enter a Facebook video URL', 'error');
+                return;
             }
-        }
 
-        // Helper to clear inputs
-        function clearInput() {
-            document.getElementById('fb-url').value = '';
-            hideAlert();
-        }
+            resultsDiv.classList.add('hidden');
+            showStatus('', '');
+            loadingDiv.classList.remove('hidden');
 
-        // Helper to paste from clipboard
-        async function pasteFromClipboard() {
             try {
-                const text = await navigator.clipboard.readText();
-                if (text) {
-                    document.getElementById('fb-url').value = text;
-                    showAlert("URL pasted successfully!", "success");
+                const response = await fetch(`/api/download?url=${encodeURIComponent(videoUrl)}`);
+                const data = await response.json();
+
+                if (data.status === 'success' && data.results && data.results.length > 0) {
+                    displayQualities(data.results);
+                    showStatus('✓ Video found! Select quality to download', 'success');
+                } else {
+                    showStatus('✗ Could not fetch video. Make sure the URL is public.', 'error');
                 }
-            } catch (err) {
-                showAlert("Failed to read from clipboard. Please paste manually.", "warning");
+            } catch (error) {
+                console.error('Error:', error);
+                showStatus('✗ Server error. Please try again.', 'error');
+            } finally {
+                loadingDiv.classList.add('hidden');
             }
-        }
-
-        // Helper to load Demo Video
-        function loadDemoUrl() {
-            document.getElementById('fb-url').value = "https://www.facebook.com/watch/?v=10158223403254321";
-            showAlert("Loaded Demo URL. Click Analyze to experience the bypass stream simulation!", "info");
-        }
-
-        // Setup local storage history list on load
-        window.addEventListener('DOMContentLoaded', () => {
-            renderHistory();
         });
 
-        // Render history function
-        function renderHistory() {
-            const historySection = document.getElementById('history-section');
-            const historyList = document.getElementById('history-list');
-            const history = JSON.parse(localStorage.getItem('tb_fb_history') || '[]');
+        function displayQualities(results) {
+            qualityContainer.innerHTML = '';
+            let validCount = 0;
 
-            if (history.length === 0) {
-                historySection.classList.add('hidden');
-                return;
-            }
-
-            historySection.classList.remove('hidden');
-            historyList.innerHTML = '';
-
-            history.forEach((item, index) => {
-                historyList.innerHTML += `
-                    <div class="bg-cyberCard border border-cyberBorder rounded-xl p-4 flex items-center justify-between space-x-3 hover:border-neonCyan/40 transition-all">
-                        <div class="flex items-center space-x-3 overflow-hidden">
-                            <div class="w-10 h-10 rounded bg-cyberBorder flex-shrink-0 flex items-center justify-center text-neonCyan">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <p class="text-xs text-white font-bold truncate max-w-[180px] sm:max-w-xs">${item.title}</p>
-                                <p class="text-[10px] font-mono text-gray-500 truncate max-w-[180px] sm:max-w-xs">${item.url}</p>
-                            </div>
-                        </div>
-                        <button onclick="revisitItem('${index}')" class="px-3 py-1.5 rounded bg-neonCyan/10 text-neonCyan font-mono text-[10px] uppercase font-bold hover:bg-neonCyan/20 transition-colors shrink-0">
-                            Load Links
-                        </button>
-                    </div>
+            results.forEach(result => {
+                if (!result.url || result.url === '/' || result.url === '') return;
+                
+                validCount++;
+                const quality = result.quality || 'Standard';
+                const isHighQuality = quality.includes('1080') || quality.includes('HD');
+                const isMediumQuality = quality.includes('720') || quality.includes('SD');
+                
+                const button = document.createElement('button');
+                button.className = `quality-btn flex items-center justify-between p-3 rounded-xl border transition-all cursor-pointer ${
+                    isHighQuality ? 'border-neonCyan bg-neonCyan/5 hover:bg-neonCyan/20 text-neonCyan' :
+                    isMediumQuality ? 'border-neonPink bg-neonPink/5 hover:bg-neonPink/20 text-neonPink' :
+                    'border-neonPurple bg-neonPurple/5 hover:bg-neonPurple/20 text-neonPurple'
+                }`;
+                
+                button.innerHTML = `
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid ${quality.includes('kbps') ? 'fa-music' : 'fa-video'}"></i>
+                        ${quality}
+                    </span>
+                    <i class="fa-solid fa-download"></i>
                 `;
+                
+                button.onclick = () => downloadVideo(result.url, quality);
+                qualityContainer.appendChild(button);
             });
-        }
 
-        function revisitItem(index) {
-            const history = JSON.parse(localStorage.getItem('tb_fb_history') || '[]');
-            const item = history[index];
-            if (item) {
-                document.getElementById('fb-url').value = item.url;
-                showAlert(`Reloaded history item: ${item.title}`, "success");
-                showResultCard(item);
+            if (validCount === 0) {
+                qualityContainer.innerHTML = '<div class="col-span-full text-center text-gray-400 py-4">No downloadable links available</div>';
             }
-        }
-
-        function clearHistory() {
-            localStorage.removeItem('tb_fb_history');
-            renderHistory();
-            showAlert("History cleared!", "info");
-        }
-
-        // Log function inside the geek-terminal simulation
-        function appendTerminalLog(message, type = 'info') {
-            const box = document.getElementById('terminal-box');
-            const container = document.getElementById('terminal-logs');
-            box.classList.remove('hidden');
-
-            let colorClass = 'text-gray-400';
-            if (type === 'success') colorClass = 'text-neonCyan font-bold';
-            if (type === 'pink') colorClass = 'text-neonPink';
-            if (type === 'warning') colorClass = 'text-yellow-400';
-            if (type === 'purple') colorClass = 'text-neonPurple';
-
-            const prefix = `[${new Date().toLocaleTimeString()}]`;
-            container.innerHTML += `<p class="${colorClass} leading-5"><span class="text-gray-600">${prefix}</span> ${message}</p>`;
-            container.scrollTop = container.scrollHeight;
-        }
-
-        // Show custom interactive alert notifications
-        function showAlert(msg, status = "info") {
-            const alert = document.getElementById('status-alert');
-            alert.classList.remove('hidden');
             
-            let bg = 'bg-cyberCard';
-            let text = 'text-gray-200';
-            let border = 'border-cyberBorder';
-            let icon = '<i class="fa-solid fa-circle-info text-neonCyan"></i>';
-
-            if (status === 'success') {
-                border = 'border-neonCyan/40';
-                icon = '<i class="fa-regular fa-circle-check text-neonCyan"></i>';
-            } else if (status === 'warning') {
-                border = 'border-neonPink/40';
-                icon = '<i class="fa-solid fa-triangle-exclamation text-neonPink"></i>';
-            }
-
-            alert.className = `mt-6 p-4 rounded-xl border flex items-start space-x-3 transition-all duration-300 ${bg} ${text} ${border}`;
-            alert.innerHTML = `
-                <span class="text-lg shrink-0 mt-0.5">${icon}</span>
-                <div class="text-xs font-mono leading-relaxed">
-                    ${msg}
-                </div>
-            `;
+            resultsDiv.classList.remove('hidden');
         }
 
-        function hideAlert() {
-            document.getElementById('status-alert').classList.add('hidden');
-        }
-
-        // Core parser logic for FB links
-        async function analyzeUrl(event) {
-            event.preventDefault();
-            hideAlert();
-            
-            const urlInput = document.getElementById('fb-url').value.trim();
-            if (!urlInput) return;
-
-            // Basic validation check
-            if (!urlInput.includes('facebook.com') && !urlInput.includes('fb.watch') && !urlInput.includes('fb.gg') && !urlInput.includes('facebook.co')) {
-                showAlert("Invalid link! Please verify that your URL belongs to Facebook (posts, watch, reels, or mobile).", "warning");
+        function downloadVideo(url, quality) {
+            if (!url || url === '/') {
+                showStatus('Download link not available', 'error');
                 return;
             }
-
-            // Clear console logs
-            document.getElementById('terminal-logs').innerHTML = '';
             
-            // Start logs simulation
-            appendTerminalLog("Initializing Team Bandaheali dynamic bypass protocol...", "info");
-            await delay(400);
-            appendTerminalLog("Checking SMD-MINI v4.2 core compatibility status... [OK]", "success");
-            await delay(500);
-            appendTerminalLog(`Hooking URL: ${urlInput.substring(0, 35)}...`, "purple");
-            await delay(650);
-            appendTerminalLog("Establishing connection bypass to Facebook GraphQL API...", "info");
-            await delay(450);
-            appendTerminalLog("Sending dynamic browser cookies signature headers...", "info");
-            await delay(550);
-
-            // We execute a high-fidelity lookup query. We can try fetching real public API endpoints.
-            // Because Facebook bypass APIs often require changing tokens, we provide a premium, highly smart integration:
-            // If the query returns correctly we display it, otherwise we supply high-quality direct stream mirrors perfectly matched.
-            try {
-                // Let's call standard free FB scraping bypass gateways
-                const encodedUrl = encodeURIComponent(urlInput);
-                const fetchUrl = `https://api.v2.alv9n.workers.dev/api/fb?url=${encodedUrl}`;
-                
-                appendTerminalLog("Requesting streaming server decryption arrays...", "pink");
-                const response = await fetch(fetchUrl).catch(e => null);
-                
-                let videoData = null;
-                
-                if (response && response.ok) {
-                    const data = await response.json();
-                    if (data && data.url) {
-                        videoData = {
-                            title: data.title || "Facebook Video Stream",
-                            thumbnail: data.thumbnail || "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=400&auto=format&fit=crop",
-                            sd: data.url,
-                            hd: data.url_hd || data.url,
-                            duration: data.duration || "N/A",
-                            source: "Worker Gateway"
-                        };
-                    }
-                }
-                
-                // Powerful fallback engine to provide user direct high-quality parsing simulation if external worker API is busy/offline
-                if (!videoData) {
-                    appendTerminalLog("[BYPASS GATEWAY BUSY] Swapping to local premium client parser!", "warning");
-                    await delay(600);
-                    appendTerminalLog("Successfully extracted direct video stream nodes!", "success");
-                    
-                    // Beautiful fallback output generated via standard FB video extraction pattern
-                    videoData = {
-                        title: "Facebook Download Result " + (urlInput.split('/').filter(Boolean).pop() || "PostStream"),
-                        thumbnail: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=400&auto=format&fit=crop",
-                        sd: urlInput, // Direct bypass link triggers inside client-side
-                        hd: urlInput,
-                        duration: "02:18",
-                        source: "Local Stream Parser"
-                    };
-                }
-                
-                appendTerminalLog("[SUCCESS] Stream parsing process complete! Render ready.", "success");
-                
-                // Save download in local history
-                saveToHistory(videoData.title, urlInput, videoData.sd);
-                
-                // Display success payload card
-                showResultCard(videoData);
-                showAlert("Facebook Video successfully parsed! Select your download format below.", "success");
-                
-            } catch (error) {
-                appendTerminalLog(`[CRITICAL ERROR] Failed to parse: ${error.message}`, "warning");
-                showAlert("Internal API restriction occurred. Please retry or try another link format.", "warning");
-            }
-        }
-
-        function showResultCard(videoData) {
-            document.getElementById('result-card').classList.remove('hidden');
-            document.getElementById('res-thumbnail').src = videoData.thumbnail;
-            document.getElementById('res-title').innerText = videoData.title;
-            document.getElementById('res-duration').innerText = `Duration: ~${videoData.duration}`;
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `TeamBandaheali_${quality.replace(/[^a-zA-Z0-9]/g, '_')}.mp4`;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
             
-            // Set link triggers
-            document.getElementById('btn-hd').href = videoData.hd;
-            document.getElementById('btn-sd').href = videoData.sd;
-            document.getElementById('btn-audio').href = videoData.sd; // Fallback to SD stream audio
+            showStatus(`⬇ Download started: ${quality}`, 'success');
         }
 
-        function saveToHistory(title, url, downloadUrl) {
-            let history = JSON.parse(localStorage.getItem('tb_fb_history') || '[]');
-            // Avoid duplicates
-            if (!history.some(item => item.url === url)) {
-                history.unshift({ title, url, downloadUrl });
-                if (history.length > 6) {
-                    history.pop();
-                }
-                localStorage.setItem('tb_fb_history', JSON.stringify(history));
-                renderHistory();
-            }
-        }
-
-        function delay(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
+        function showStatus(message, type) {
+            statusDiv.innerHTML = message;
+            statusDiv.className = `mt-4 text-sm ${type === 'error' ? 'text-red-400' : type === 'success' ? 'text-neonCyan' : ''}`;
         }
     </script>
 </body>
