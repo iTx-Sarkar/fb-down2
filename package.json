@@ -1,0 +1,23 @@
+{
+  "name": "fb-lightning-downloader",
+  "version": "1.0.0",
+  "description": "Premium Facebook Video Downloader with ultra high-speed neon-themed portal and advanced proxying capabilities.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.2"
+  },
+  "keywords": [
+    "facebook downloader",
+    "fb video downloader",
+    "download facebook hd video",
+    "neon downloader",
+    "fb save"
+  ],
+  "author": "Software Architect",
+  "license": "MIT"
+}
