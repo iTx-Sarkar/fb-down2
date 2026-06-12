@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,39 +31,45 @@
                         cyber: ['Orbitron', 'sans-serif'],
                     },
                     colors: {
-                        cyberDark: '#080711',
-                        cyberCard: '#0e0c24',
+                        cyberDark: '#040308',
+                        cyberCard: '#0c0a1a',
+                        cyberBorder: '#1f1a3a',
                         neonPink: '#ff007f',
                         neonCyan: '#00f0ff',
                         neonPurple: '#bd00ff'
+                    },
+                    boxShadow: {
+                        'neon-pink': '0 0 15px rgba(255, 0, 127, 0.4)',
+                        'neon-cyan': '0 0 15px rgba(0, 240, 255, 0.4)',
+                        'neon-purple': '0 0 20px rgba(189, 0, 255, 0.35)',
                     }
                 }
             }
         }
     </script>
     
-    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* Custom background grid and glow */
+        .cyber-grid {
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.6), 0 0 20px rgba(189, 0, 255, 0.4);
+        }
+        .neon-text-pink {
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+        }
+        @keyframes lightning-glow {
+            0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 2px #00f0ff); }
+            50% { opacity: 1; filter: drop-shadow(0 0 12px #00f0ff) drop-shadow(0 0 25px #ff007f); }
+        }
+        .lightning-pulse {
+            animation: lightning-glow 1.5s infinite alternate;
+        }
+    </style>
 
     <!-- Structured Data (JSON-LD) for SEO Search Ranking -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Team Bandaheali Facebook Video Downloader",
-      "url": "https://fblightning-downloader.com/",
-      "description": "Free premium online utility tool created by Team Bandaheali (mr Shaban & Smd-mini) to download Facebook Videos easily in high quality HD or SD format.",
-      "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "All",
-      "browserRequirements": "Requires HTML5 and Javascript",
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
-</head>
-<body class="bg-cyberDark text-gray-100 min-h-screen flex flex-col selection:bg-neonPink selection:text-white">
-
-    <!-- Background Grid & Glowing Orbs -->
-    <div class=
+    <script type=
